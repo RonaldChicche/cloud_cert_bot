@@ -5,6 +5,7 @@ from storage.sqlite import init_db, save_coupons
 def main():
     init_db()
     all_results = scrape_gcp_skills()
+    print(all_results)
     save_coupons(all_results)
 
 
